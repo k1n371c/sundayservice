@@ -188,6 +188,8 @@ Passive pattern recognition across your service history. When something looks of
 
 The longer you use the app, the more useful this becomes. The data is the moat.
 
+> **A note on AI:** Both AI features are embedded tools, not interfaces. There is no chatbot, no chat window, no "ask the AI" button. AI works in the background — pre-filling templates, surfacing anomalies, writing export narratives. The product is car-first. AI is the craftsman's assistant embedded in the product, not the product itself.
+
 ---
 
 ## The Feature Loop
@@ -205,27 +207,31 @@ Cross-references     Torque specs           Service history      Provenance proo
 
 ## Platform Strategy
 
-**iOS — primary product.** Native, best-in-class UX, designed for the garage environment. The focus. Everything else comes after this is right.
+**Web app — primary product.** Sunday Service is a responsive web application that works on phone and laptop equally. The use case splits naturally across devices: phone for quick logging in the garage, torque spec lookups, and checking what's due; laptop for detailed data entry, planning upcoming work, reviewing history, and high-level views across multiple cars. A web app serves both without compromise — and eliminates App Store dependency on pricing, distribution, and approvals.
+
+The app can be added to an iOS or Android home screen as a PWA, giving a native-like experience without requiring App Store approval.
 
 **Landing page — brand and waitlist.** Not a feature list. A feeling. The brand voice, the pillars, a few strong images, and a way to get on the list. Clean. Confident. Not trying to explain the whole product.
 
 **Merch store — culture, not commerce.** Limited runs. "The garage is open." "Not every car gets this treatment." "Somewhere between oil and obsession." Hats, tees, stickers, maybe a patch. The merchandise isn't a revenue strategy — it's a signal that this is a community, not just an app. Merch buyers wear the brand into garages and become the best word-of-mouth we have. Launch quietly when the app is real.
 
-**Web app — eventually.** For desktop reference during a work session. Not the priority.
-
-**Android — later.** After iOS is proven and the community exists.
+**Native iOS / Android — later.** If the web app proves the product and the community grows to warrant it. Not the priority in v1.
 
 ---
 
 ## Monetization
 
-A subscription model doesn't fit this brand. You don't rent a torque wrench — you own it. The app should feel the same way.
+Sunday Service is a web app — no App Store cut, no one-time purchase constraint, no platform dependency on Apple's approval.
 
-**Model:** Free core tier (limited vehicles, basic log) with a **one-time Pro purchase** that unlocks everything: unlimited vehicles, Procedure Templates, Spec & Source Vault, Parts Shelf, Visual Ledger, Dossier Export, Garage Mode, AI features.
+**Model:** Free tier limited to 1 car with full feature access. **Pro subscription** at $4.99/month or $39/year (save 35%) unlocks unlimited vehicles, photo uploads, Dossier Export, AI features, and future platform additions. Payments handled by Stripe at ~2.9% + $0.30 per transaction.
 
-Alternatively: **paid upfront** at a price that signals quality. This isn't a $0.99 app. It's a tool for people who spend $80 on a filter wrench without thinking twice.
+**Why subscription:**
+- Recurring revenue funds ongoing AI feature costs and continued development
+- Enthusiasts add cars over time — Pro pays for itself with 2+ cars
+- Better LTV: an average subscriber at 2.5 years generates ~$94 net vs. $39 one-time
+- No App Store cut — economics are materially better than a native purchase model
 
-Avoid: subscription gating on core features. GarageHub does this and it creates friction with exactly the audience that would otherwise become evangelists.
+Avoid gating the core experience behind the paywall. The free tier should feel like the real product, not a demo. The goal is to build trust first; conversion follows from that.
 
 ---
 
@@ -262,9 +268,8 @@ Avoid: subscription gating on core features. GarageHub does this and it creates 
 *Build the community.*
 
 - Merch store launch
-- Web app for desktop reference
 - Procedure template sharing between users
-- Android
+- Native iOS / Android apps (if warranted after web proves out)
 
 ---
 

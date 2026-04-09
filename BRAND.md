@@ -218,6 +218,7 @@ Not at app launch. The merch should exist independently — something the brand 
 - We don't chase growth with ads before the product is right. Bad word-of-mouth from this audience travels fast.
 - We don't apologize for being selective. This isn't for everyone, and we say so.
 - We don't build features for the wrong user. A casual driver who wants a basic reminder app is not our customer.
+- We don't build for mobile-only. The full experience lives on desktop and phone equally.
 
 ---
 

@@ -40,61 +40,70 @@ From this 26.8M, a further cut to genuine primary-DIY mechanics who: (a) do thei
 
 ## Serviceable Addressable Market (SAM)
 
+Sunday Service is a web app accessible on any device — iOS, Android, and desktop. The iOS filter no longer applies.
+
 | Filter | Rate | Result |
 |---|---|---|
-| US iOS market share | 62–65% | ~5.1M |
-| Smartphone penetration (25–44 demo) | ~99% | Negligible adjustment |
-| **SAM** | | **~5 million** |
+| Smartphone / web penetration (25–54 demo) | ~99% | Negligible adjustment |
+| US-only (v1 focus) | — | 8M |
+| **SAM** | | **~8 million** |
+
+The removal of the iOS constraint meaningfully expands reach — roughly 35% of the enthusiast audience was previously excluded by platform.
 
 ---
 
 ## Serviceable Obtainable Market (SOM)
 
-### Year 1 Download Benchmarks
+### Year 1 Signup Benchmarks
 
-Comparable reference: Torque Pro — a premium OBD2/diagnostics app, $4.95, ~20K downloads/month at steady state (~$40K gross/month per Sensor Tower). Torque Pro is utility-focused with no brand or community. Sunday Service starts with a brand advantage but lower discovery surface.
+Comparable reference: Torque Pro — a premium OBD2/diagnostics app, $4.95, ~20K downloads/month at steady state (~$40K gross/month per Sensor Tower). Torque Pro is utility-focused with no brand or community. Sunday Service starts with a brand advantage but lower initial discovery surface as a web product.
 
-| Scenario | Year 1 Downloads | Basis |
+| Scenario | Year 1 Signups | Basis |
 |---|---|---|
-| Conservative | 3,000 | Minimal community seeding, App Store organic only |
+| Conservative | 3,000 | Minimal community seeding, organic search only |
 | Base | 8,000 | Active Reddit/Instagram community, some press |
 | Optimistic | 15,000 | Viral community moment, strong launch |
 
-Pro conversion assumed at 40–50% (one-time purchase; users who download have already self-selected).
+Paid conversion assumed at 15–20% of total signups in Year 1 (web signups skew intent-driven but free tier creates a wider top of funnel). Conversion improves in Years 2–3 as the product matures.
 
 ---
 
 ## ARR / Revenue Projections
 
-### Pricing Assumption
-- **$17.99 one-time Pro unlock**
-- Net per purchase after Apple 15% fee: **$15.29**
+### Pricing & LTV Assumptions
+- **$39/year** or **$4.99/month** (annual is the primary offer)
+- Net per annual subscription after Stripe fee (2.9% + $0.30): **$37.57**
+- Annual churn: **40%** (conservative for an engaged enthusiast audience)
+- Average subscriber lifespan: **2.5 years** (= 1 / 0.40)
+- **LTV per subscriber: ~$94** ($37.57/year × 2.5 years)
+
+Active subscribers at end of each year = prior year active × 0.60 + new paid subs acquired.
 
 ### 3-Year Model
 
 **Conservative**
 
-| Year | New Pro Purchases | Net Revenue | Cumulative |
-|---|---|---|---|
-| 1 | 450 | $6,900 | $6,900 |
-| 2 | 750 | $11,500 | $18,400 |
-| 3 | 850 | $13,000 | $31,400 |
+| Year | New Paid Subs | Active Subs (EOY) | Annual Revenue | Cumulative |
+|---|---|---|---|---|
+| 1 | 450 | 450 | $16,900 | $16,900 |
+| 2 | 750 | 1,020 | $38,300 | $55,200 |
+| 3 | 850 | 1,462 | $54,900 | $110,100 |
 
 **Base Case**
 
-| Year | New Pro Purchases | Net Revenue | Cumulative |
-|---|---|---|---|
-| 1 | 1,400 | $21,400 | $21,400 |
-| 2 | 2,100 | $32,100 | $53,500 |
-| 3 | 2,400 | $36,700 | $90,200 |
+| Year | New Paid Subs | Active Subs (EOY) | Annual Revenue | Cumulative |
+|---|---|---|---|---|
+| 1 | 1,400 | 1,400 | $52,600 | $52,600 |
+| 2 | 2,100 | 2,940 | $110,500 | $163,100 |
+| 3 | 2,400 | 4,164 | $156,500 | $319,600 |
 
 **Optimistic**
 
-| Year | New Pro Purchases | Net Revenue | Cumulative |
-|---|---|---|---|
-| 1 | 3,100 | $47,400 | $47,400 |
-| 2 | 5,200 | $79,500 | $126,900 |
-| 3 | 8,600 | $131,600 | $258,500 |
+| Year | New Paid Subs | Active Subs (EOY) | Annual Revenue | Cumulative |
+|---|---|---|---|---|
+| 1 | 3,100 | 3,100 | $116,500 | $116,500 |
+| 2 | 5,200 | 7,060 | $265,300 | $381,800 |
+| 3 | 8,600 | 12,836 | $482,400 | $864,200 |
 
 ---
 
@@ -112,22 +121,22 @@ Pro conversion assumed at 40–50% (one-time purchase; users who download have a
 
 | Scenario | 3-Year Cumulative | What It Requires |
 |---|---|---|
-| Conservative | ~$32K | App Store organic only |
-| Base | ~$90K | Active community seeding |
-| Optimistic | ~$259K | Strong launch + community flywheel |
+| Conservative | ~$110K | Organic web/community only |
+| Base | ~$320K | Active community seeding |
+| Optimistic | ~$864K | Strong launch + community flywheel |
 
 **This is an excellent indie product — wrong size for VC, right size for one person who loves cars.**
 
-The user spends ~$2,025/year on their car. Asking $18 once for the best maintenance tool they've ever used is not a hard sell. The bottleneck is discovery, not conversion.
+The subscription model changes the math significantly: recurring revenue compounds year over year as the retained subscriber base grows. The user spends ~$2,025/year on their car. Asking $39/year for the best maintenance tool they've ever used is not a hard sell. The bottleneck is discovery, not conversion. LTV of ~$94 per subscriber gives real room for community-building investment.
 
 ---
 
 ## What Would Change the Math
 
-- **Android:** ~35% of enthusiasts = potential 1.5x
-- **International:** UK, Germany, Japan, Australia — same customer profile
-- **Subscription hybrid:** Annual fee for cloud backup + Dossier exports adds recurring revenue
+- **International:** UK, Germany, Japan, Australia — same customer profile, no additional platform work required
+- **Native iOS / Android apps:** Eliminates PWA friction for users who prefer native; could improve conversion 10–20%
 - **B2B / Shop tier:** Independent performance shops — different product, much higher ARPU
+- **Content / SEO:** Procedure guides, torque spec databases, cross-reference posts — compounding organic discovery
 
 ---
 
